@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+
+<style>
+    .sidebar-toggle {
+        position: fixed;
+        top: 2rem;
+        right: 3rem;
+        font-size: 2rem;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        animation: bounce 2s ease-in-out infinite;
+    }
+    .sidebar-toggle:hover {
+        color: blue;
+    }
+    @keyframes bounce {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.5);}
+        100% {transform: scale(1);}
+    }
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
+    .close-btn {
+        font-size: 1.75rem;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    .close-btn:hover {
+        color:red;
+    }
+    .links{list-style: none;padding-left: 0;}
+    .links a {
+        display: block;
+        margin-right: 40px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        padding: 0.5em 1em;
+        transition: all 0.3s linear;
+    }
+    .links a:hover {
+        background-color: rgb(240, 208, 150);
+        padding-left: 2.5rem;
+    }
+    .sidebar {
+        position: fixed;
+        background-color: bisque;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        row-gap: 1rem;
+        box-shadow:navy;
+        transition: all 0.3s linear;
+        transform: translate(-100%);
+    }
+    .show-sidebar {
+        transform: translate(0);
+    }
+</style>
+
+<body>
+<div class="container">
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/logo1.svg" class="logo" alt="" />
+            <button class="close-btn"><i class="fas fa-times"></i></button> 
+        </div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </aside>    
+</div>
+<script src="8-sidebar.js"></script>
+</body>
+</html>

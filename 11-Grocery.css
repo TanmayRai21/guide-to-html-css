@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: hsl(189, 64%, 98%);
+    line-height: 1.5;
+}
+
+.section-center {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 35rem;
+    max-height: fit-content;
+    margin-top: 8rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.alert {
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success {
+    color: #155724;
+    background: #d4edda;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+#grocery {
+    background-color: hsl(210deg 36% 96%);
+    border-color: transparent;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0.25rem;
+    width: 400px;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.submit-btn {
+    border-color: transparent;
+    background-color: hsl(205deg 86% 81%);
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.submit-btn:hover {
+    background: rgb(26, 170, 226);
+    color: white;
+}
+
+.edit-btn,
+.delete-btn {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin: 0 0.15rem;
+    transition: all 0.3s linear;
+}
+
+.edit-btn {
+    color: lightgreen;
+}
+
+.edit-btn:hover {
+    color: lightgreen;
+}
+
+.delete-btn {
+    color: red;
+}
+
+.delete-btn:hover {
+    color: darkred;
+}
+
+.clear-btn {
+    text-transform: capitalize;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: red;
+    margin: 0 auto;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.clear-btn:hover {
+    color: darkred;
+}
+
+.grocery-container {
+    margin-top: 2rem;
+    transition: all 0.3s linear;
+    visibility: hidden;
+}
+
+.show-container {
+    visibility: visible;
+}
+
+.grocery-item {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s linear;
+    padding: 0.25rem 1rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.grocery-item:hover {
+    color: lightslategray;
+    background: hsl(210deg 36% 96%);
+}

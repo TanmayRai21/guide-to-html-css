@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(228, 237, 241);
+    color: hsl(210, 22%, 49%);
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.title h2 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-img {
+    margin-bottom: 2rem;
+}
+
+.about-img img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+}
+
+.about {
+    background: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.btn-container {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: grid;
+    outline: none;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-btn:nth-child(1) {
+    border-top-left-radius: 8px;
+}
+
+.tab-btn:nth-child(3) {
+    border-top-right-radius: 8px;
+}
+
+.tab-btn {
+    padding: 1rem 0;
+    border: none;
+    font-size: 1rem;
+    display: block;
+    background: hsl(212, 33%, 89%);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    letter-spacing: 0.25rem;
+}
+
+.tab-btn:hover:not(.active) {
+    background: rgb(226, 240, 247);
+    color: rgb(59, 173, 218);
+}
+
+.about-content {
+    padding: 2rem 1.5rem;
+}
+
+.content {
+    display: none;
+}
+
+.tab-btn.active {
+    background: white;
+}
+
+.content.active {
+    display: block;
+}
+
+@media screen and (min-width: 992px) {
+    .about-img {
+        margin-bottom: 0;
+    }
+    .about-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
